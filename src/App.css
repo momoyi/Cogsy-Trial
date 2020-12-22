@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@font-face {
+	font-family: "Boing";
+	src: url(./assets/fonts/gilroy/Gilroy-Regular.woff) format("woff");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Boing";
+	src: url(./assets/fonts/gilroy/Gilroy-Bold.woff) format("woff");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Boing";
+	src: url(./assets/fonts/gilroy/Gilroy-Light.woff) format("woff");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Boing";
+	src: url(./assets/fonts/gilroy/Gilroy-Medium.woff) format("woff");
+	font-weight: 500;
+}
+
+body {
+	font-family: "Boing";
+	padding-bottom: 2rem;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
+}
+
+.font-weight-medium {
+	font-weight: 500;
+}
+
+.color-dark {
+	color: #404040;
+}
+
+.color-purple {
+	color: #b298ff;
+}
+
+.navbar {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+	background: #7a4dff;
+}
+
+thead th {
+	color: #3e3e3e;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.id {
+	color: #404040;
+	font-weight: bold;
+}
+
+.table td,
+.table th {
+	vertical-align: middle !important;
+}
+
+.action {
+	color: white;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 8px;
+	border: none !important;
+	box-shadow: none !important;
+	outline: none !important;
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 13px;
+}
+
+.action.increase {
+	background: #5cccb2;
+}
+
+.action.decrease {
+	background: #f7c325;
+}
+
+.action.promote {
+	background: #7a4dff;
+}
+
+.action.clearance {
+	background: #d3455b;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
