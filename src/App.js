@@ -25,7 +25,7 @@ function App() {
 											Opportunities
 										</h5>
 										<a
-											href="#"
+											href="https://google.com"
 											className="font-weight-medium color-purple"
 										>
 											View All
